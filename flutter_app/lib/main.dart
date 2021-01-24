@@ -301,52 +301,55 @@ class ListContainer3 extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                margin: const EdgeInsets.fromLTRB(10, 7, 10, 0),
-                width: MediaQuery.of(context).size.width - 192,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("赛科龙RX1-02 休旅型",
-                        style: new TextStyle(
-                            color: Color(0xFF17191A), fontSize: 16)),
-                    Container(
-                      margin: const EdgeInsets.only(top: 5, bottom: 15),
-                      padding: const EdgeInsets.fromLTRB(8, 1, 8, 1),
-                      decoration: BoxDecoration(
-                          color: Color(0xFFEBF3FC),
-                          borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(0),
-                              topRight: Radius.circular(8),
-                              bottomLeft: Radius.circular(8),
-                              bottomRight: Radius.circular(8))),
-                      child: Text("为休旅而新",
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.fromLTRB(10, 7, 10, 0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("赛科龙RX1-02 休旅型",
                           style: new TextStyle(
-                              color: Color(0xFF409FFE), fontSize: 11)),
-                    ),
-                    Text("新车上市，至尊选择！\n赛科龙全新出发！",
-                        style: new TextStyle(
-                            color: Color(0xFFAAB0B3), fontSize: 11, height: 2)),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Container(
-                          width: 80,
-                          height: 32,
-                          alignment: Alignment.center,
-                          margin: const EdgeInsets.only(top: 5),
-                          decoration: BoxDecoration(
-                            color: Color(0xFF17A1E6),
-                            borderRadius: BorderRadius.circular(3),
+                              color: Color(0xFF17191A), fontSize: 16)),
+                      Container(
+                        margin: const EdgeInsets.only(top: 5, bottom: 15),
+                        padding: const EdgeInsets.fromLTRB(8, 1, 8, 1),
+                        decoration: BoxDecoration(
+                            color: Color(0xFFEBF3FC),
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(0),
+                                topRight: Radius.circular(8),
+                                bottomLeft: Radius.circular(8),
+                                bottomRight: Radius.circular(8))),
+                        child: Text("为休旅而新",
+                            style: new TextStyle(
+                                color: Color(0xFF409FFE), fontSize: 11)),
+                      ),
+                      Text("新车上市，至尊选择！\n赛科龙全新出发！",
+                          style: new TextStyle(
+                              color: Color(0xFFAAB0B3),
+                              fontSize: 11,
+                              height: 2)),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            width: 80,
+                            height: 32,
+                            alignment: Alignment.center,
+                            margin: const EdgeInsets.only(top: 5),
+                            decoration: BoxDecoration(
+                              color: Color(0xFF17A1E6),
+                              borderRadius: BorderRadius.circular(3),
+                            ),
+                            child: Text("详情",
+                                style: new TextStyle(
+                                    color: Color(0xFFFFFFFF), fontSize: 12)),
                           ),
-                          child: Text("详情",
-                              style: new TextStyle(
-                                  color: Color(0xFFFFFFFF), fontSize: 12)),
-                        ),
-                      ],
-                    ),
-                  ],
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               )
             ],
@@ -407,24 +410,26 @@ class ListContainer4 extends StatelessWidget {
               ),
             ],
           ),
-          Container(
-            height: 73,
-            width: MediaQuery.of(context).size.width - 190,
-            margin: const EdgeInsets.fromLTRB(10, 4, 10, 0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "物必达快讯 | 物必达受邀出席第19届亚太零售商大会暨国…物必达快讯 | 物必达受邀出席第19届亚太零售商大会暨国… ",
-                  style: new TextStyle(color: Color(0xFF17191A), fontSize: 14),
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 2,
-                ),
-                Text("2019.09.06",
+          Expanded(
+            child: Container(
+              height: 73,
+              margin: const EdgeInsets.fromLTRB(10, 4, 10, 0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "物必达快讯 | 物必达受邀出席第19届亚太零售商大会暨国…物必达快讯 | 物必达受邀出席第19届亚太零售商大会暨国… ",
                     style:
-                        new TextStyle(color: Color(0xFFAAB0B3), fontSize: 11)),
-              ],
+                        new TextStyle(color: Color(0xFF17191A), fontSize: 14),
+                    overflow: TextOverflow.ellipsis,
+                    maxLines: 2,
+                  ),
+                  Text("2019.09.06",
+                      style: new TextStyle(
+                          color: Color(0xFFAAB0B3), fontSize: 11)),
+                ],
+              ),
             ),
           )
         ],
@@ -504,8 +509,8 @@ class TabHome extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                          return Management();
-                        }));
+                      return Management();
+                    }));
                   },
                   child: Column(
                     children: [

@@ -286,55 +286,56 @@ class ListItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset("assets/images/logo_zongshen_180.png"),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Text(
-                    "长安集团",
-                    style: TextStyle(
-                        color: Color(0xFF17191A),
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  Offstage(
-                    offstage: isVis,
-                    child: Container(
-                      margin: const EdgeInsets.only(left: 5),
-                      decoration: BoxDecoration(
-                          color: Color(0x263689B3),
-                          borderRadius: BorderRadius.circular(9)),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Image.asset("assets/images/icon_daili_32.png"),
-                          Container(
-                            padding: const EdgeInsets.only(left: 4, right: 4),
-                            child: Text(
-                              "代理中",
-                              style: TextStyle(
-                                  color: Color(0xFF308FBF), fontSize: 9),
-                            ),
-                          ),
-                        ],
-                      ),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Text(
+                      "长安集团",
+                      style: TextStyle(
+                          color: Color(0xFF17191A),
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
                     ),
-                  )
-                ],
-              ),
-              Container(
-                padding: const EdgeInsets.only(top: 5, right: 5),
-                width: MediaQuery.of(context).size.width - 130,
-                child: Text(
-                  "这是，但是最多两行这是，但是最多两行这是，但是最多两行这是，但是最多两行这是，但是最多两行这是，但是最多两行",
-                  style: TextStyle(color: Color(0xFFAAB0B3), fontSize: 11),
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 2,
+                    Offstage(
+                      offstage: isVis,
+                      child: Container(
+                        margin: const EdgeInsets.only(left: 5),
+                        decoration: BoxDecoration(
+                            color: Color(0x263689B3),
+                            borderRadius: BorderRadius.circular(9)),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/images/icon_daili_32.png"),
+                            Container(
+                              padding: const EdgeInsets.only(left: 4, right: 4),
+                              child: Text(
+                                "代理中",
+                                style: TextStyle(
+                                    color: Color(0xFF308FBF), fontSize: 9),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
                 ),
-              )
-            ],
+                Container(
+                  padding: const EdgeInsets.only(top: 5, right: 5),
+                  child: Text(
+                    "这是，但是最多两行这是，但是最多两行这是，但是最多两行这是，但是最多两行这是，但是最多两行这是，但是最多两行",
+                    style: TextStyle(color: Color(0xFFAAB0B3), fontSize: 11),
+                    overflow: TextOverflow.ellipsis,
+                    maxLines: 2,
+                  ),
+                )
+              ],
+            ),
           ),
           Spacer(),
           Container(
@@ -375,7 +376,7 @@ class TabHome extends StatelessWidget {
                     child: Text(
                       "首页",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Color(0xFF17A1E6), fontSize: 10),
+                      style: TextStyle(color: Color(0xFFAAB0B3), fontSize: 10),
                     )),
               ],
             ),

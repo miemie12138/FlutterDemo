@@ -184,7 +184,7 @@ class TabHome extends StatelessWidget {
                     child: Text(
                       "首页",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Color(0xFF17A1E6), fontSize: 10),
+                      style: TextStyle(color: Color(0xFFAAB0B3), fontSize: 10),
                     )),
               ],
             ),
